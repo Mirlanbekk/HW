@@ -22,7 +22,8 @@ resource "aws_db_instance" "_" {
   storage_encrypted       = var.storage_encrypted
   storage_type            = var.storage_type
   skip_final_snapshot     = true
+
  
 
-  vpc_security_group_ids = [var.vpc_security_group_ids]
+  vpc_security_group_ids    = [aws_security_group.db.id]
 }

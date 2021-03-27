@@ -1,31 +1,26 @@
-variable subnetgroup {}
-variable allocated_storage {}
-variable engine {}           
-variable engine_version {}        
-variable instance_class {}      
-variable multi_az {}             
-variable name {}             
-variable username {}  
-variable password {}                
-variable port {}                
-variable publicly_accessible {}
-variable storage_encrypted {}  
-variable storage_type {} 
-variable cidr_block_private_subnet1 {}    
-variable cidr_block_private_subnet2 {}
-variable vpc_security_group_ids {}
+ variable  "allocated_storage" {}
 
-variable prefix {}
+variable "engine" {}
+variable "engine_version" {}
+variable "instance_class" {}
+variable "multi_az" {}
+  
+variable "name" {}
+variable "username" {}
+#   password                = random_password.password.result
+variable "password" {}
+variable "port" {}
+variable "publicly_accessible" {} 
+variable "storage_encrypted" {}
+variable "storage_type" {}
+variable "vpc_security_group_ids" {}
+variable "subnetgroup" {}
+variable "vpc_id" {}
+variable "cidr_block_private_subnet1" {}
+variable "cidr_block_private_subnet2" {}
+variable "prefix" {}
 variable "region" {}
 variable "ssh_key_path" {}
-variable "key_name" {}
 variable "rds_port" {}
 variable "cidr_block_public_subnet" {}
-variable "instance_tenancy" {}
-variable "instance_type" {}
-variable "cidr_block_vpc" {}
-variable "security_group_ec2" {}
-variable "ami" {}
 variable "security_group_db" {}
-variable "cidr_block_route" {}
-variable "vpc" {}
